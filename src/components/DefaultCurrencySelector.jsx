@@ -8,7 +8,7 @@ export default function DefaultCurrencySelector({ defaultCurrency, setDefaultCur
     <div className="default">
       <label>
         Default Currency:
-        <select
+        <select className="set"
           value={defaultCurrency}
           onChange={(e) => setDefaultCurrency(e.target.value)}
         >

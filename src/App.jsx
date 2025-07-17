@@ -60,6 +60,9 @@ export default function App() {
 
   return (
     <div className="main-container" style={{ maxWidth: 600, margin: "auto", fontFamily: "Arial, sans-serif" }}>
+        <div className="logo">
+          <img src="https://th.bing.com/th/id/OIP.XyACFjnkdbWvkq1W4Q4JfAHaE8?w=240&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="" />
+        </div>
       <h1>Royalty's Currency Exchange Wallet</h1>
       <DefaultCurrencySelector
         defaultCurrency={defaultCurrency}

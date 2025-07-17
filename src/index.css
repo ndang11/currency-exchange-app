@@ -75,6 +75,11 @@ body {
   color: #333;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
 /* balance card */
 .card {
   background: #fff;
@@ -163,5 +168,18 @@ form input[type="number"]:focus {
 }
 
 .default {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+select {
+  font-weight: 600;
+  margin: 8px 0 4px;
+}
+
+.set {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
