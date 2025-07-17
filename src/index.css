@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,103 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+body {
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* balance card */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.balance {
+  color: blue;
+  font-size: 16px;
+  font-weight: 600;
+
+  h3 {
+    color: black;
+  }
+}
+
+.other-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px;
+}
+
+.list {
+  list-style: none;
+}
+
+/* button */
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  font-weight: 500;
+  background-color: #4285f4;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit {
+  background-color: green;
+}
+
+button:hover {
+  background-color: #3367d6;
+}
+
+/* input */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: 600;
+  margin: 8px 0 4px;
+}
+
+form select,
+form input[type="number"] {
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+form select:focus,
+form input[type="number"]:focus {
+  border-color: #4285f4;
+}
+
+.default {
+  font-size: 16px;
 }
