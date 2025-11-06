@@ -1,12 +1,23 @@
-# React + Vite
+Project Name: Currency Exchange App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project view.
+![home](./src/assets/Screenshot%20from%202025-11-06%2015-08-35.png)
+![home](./src/assets/Screenshot%20from%202025-11-06%2015-09-07.png)
+![home](./src/assets/Screenshot%20from%202025-11-06%2015-09-43.png) 
 
-Currently, two official plugins are available:
+Project Description: A Currency Exchange App allows users to to convert different currencies to another currency, were you can input an amount in XAF and convert it to EUR. It also shows the Total Balance of each currency you have.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About 
+It is very simple to operete were a user can just depost in the account he wants to exchange, select the the currency to exchange, input the amount and click on the exchange button and that is all.
 
-## Expanding the ESLint configuration
+Project Technicals.
+## Build With
+-HTML
+-Javascript
+-React.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Author:
+NDANG-KAH A [Frontend Developer]
+
+- GitHub: [@ndang11](https://github.com/ndang11)
+- LinkedIn: [@ndang-ambei](https://www.linkedin.com/in/ndang-ambei-84a97037b/)
