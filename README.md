@@ -21,3 +21,6 @@ NDANG-KAH A [Frontend Developer]
 
 - GitHub: [@ndang11](https://github.com/ndang11)
 - LinkedIn: [@ndang-ambei](https://www.linkedin.com/in/ndang-ambei-84a97037b/)
+
+Project demo link:
+[link](https://currency-exchange-app-ux33.vercel.app/)
