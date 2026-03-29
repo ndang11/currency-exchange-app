@@ -4,7 +4,6 @@ import { FaChartLine } from "react-icons/fa";
 import { convert } from "../utils/exchangeRates";
 
 export default function TotalBalance({ balances, defaultCurrency }) {
-  // Sum all balances converted to default currency
   const total = Object.entries(balances).reduce((acc, [cur, amount]) => {
     return acc + convert(amount, cur, defaultCurrency);
   }, 0);

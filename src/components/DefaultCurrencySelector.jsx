@@ -1,4 +1,3 @@
-// src/components/DefaultCurrencySelector.jsx
 import React from "react";
 import { FaGear } from "react-icons/fa6";
 
