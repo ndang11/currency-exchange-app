@@ -1,7 +1,13 @@
 // src/components/ExchangeForm.jsx
 import React, { useState } from "react";
+import { FaArrowRightArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 const currencies = ["USD", "EUR", "XAF"];
+const currencyFlags = {
+  USD: "🇺🇸",
+  EUR: "🇪🇺",
+  XAF: "🇨🇲",
+};
 
 export default function ExchangeForm({ balances, onExchange }) {
   const [fromCurrency, setFromCurrency] = useState("USD");
@@ -28,40 +34,76 @@ export default function ExchangeForm({ balances, onExchange }) {
     setAmount("");
   };
 
+  const swapCurrencies = () => {
+    const temp = fromCurrency;
+    setFromCurrency(toCurrency);
+    setToCurrency(temp);
+  };
+
   return (
     <form onSubmit={handleExchange}>
-      <h3>Exchange Currency</h3>
-      <div>
-        <label>From:</label>
-        <select
-          value={fromCurrency}
-          onChange={(e) => setFromCurrency(e.target.value)}
+      <div className="card-header">
+        <FaArrowRightArrowLeft className="card-icon" />
+        <h3>Exchange Currency</h3>
+      </div>
+
+      <div className="exchange-row">
+        <div className="form-group">
+          <label htmlFor="from">From</label>
+          <select
+            id="from"
+            value={fromCurrency}
+            onChange={(e) => setFromCurrency(e.target.value)}
+          >
+            {currencies.map((cur) => (
+              <option key={cur} value={cur}>
+                {currencyFlags[cur]} {cur}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <button
+          type="button"
+          onClick={swapCurrencies}
+          className="exchange-icon"
+          title="Swap currencies"
+          style={{ border: "none", background: "none", cursor: "pointer" }}
         >
-          {currencies.map((cur) => (
-            <option key={cur} value={cur}>
-              {cur}
-            </option>
-          ))}
-        </select>
+          <FaArrowRight />
+        </button>
+
+        <div className="form-group">
+          <label htmlFor="to">To</label>
+          <select
+            id="to"
+            value={toCurrency}
+            onChange={(e) => setToCurrency(e.target.value)}
+          >
+            {currencies.map((cur) => (
+              <option key={cur} value={cur}>
+                {currencyFlags[cur]} {cur}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
-      <div>
-        <label>To:</label>
-        <select value={toCurrency} onChange={(e) => setToCurrency(e.target.value)}>
-          {currencies.map((cur) => (
-            <option key={cur} value={cur}>
-              {cur}
-            </option>
-          ))}
-        </select>
+
+      <div className="form-group">
+        <label htmlFor="amount">Amount</label>
+        <input
+          id="amount"
+          type="number"
+          step="any"
+          placeholder={`Enter amount in ${fromCurrency}`}
+          value={amount}
+          onChange={(e) => setAmount(e.target.value)}
+        />
       </div>
-      <input
-        type="number"
-        step="any"
-        placeholder="Amount"
-        value={amount}
-        onChange={(e) => setAmount(e.target.value)}
-      />
-      <button type="submit">Exchange</button>
+
+      <button type="submit">
+        <FaArrowRightArrowLeft /> Exchange Now
+      </button>
     </form>
   );
 }

@@ -1,5 +1,6 @@
 // src/components/TotalBalance.jsx
 import React from "react";
+import { FaChartLine } from "react-icons/fa";
 import { convert } from "../utils/exchangeRates";
 
 export default function TotalBalance({ balances, defaultCurrency }) {
@@ -9,10 +10,14 @@ export default function TotalBalance({ balances, defaultCurrency }) {
   }, 0);
 
   return (
-    <div>
-      <h3>
-        Total Value in {defaultCurrency}: {total.toFixed(3)} {defaultCurrency}
-      </h3>
+    <div className="total-balance">
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "10px" }}>
+        <FaChartLine style={{ fontSize: "1.5rem" }} />
+        <h3>Total Balance</h3>
+      </div>
+      <div className="total-amount">
+        {total.toFixed(2)} {defaultCurrency}
+      </div>
     </div>
   );
 }
