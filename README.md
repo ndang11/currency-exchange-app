@@ -50,18 +50,9 @@ Managing money across multiple currencies is challenging for individuals and bus
 
 ---
 
-## 📷 Screenshots
-
-(Add screenshots here)
-
-Example:
-![Homepage Screenshot](link-to-image)
-
----
-
 ## 🔗 Live Demo
 
-Frontend: https://currency-exchange-app-ux33.vercel.app/
+Frontend: https://currency-exchange-app-blond.vercel.app/
 
 ---
 
