@@ -5,11 +5,11 @@
 }
 
 body {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-color: #75a4ee;
   min-height: 100vh;
   margin: 0;
   padding: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #333;
 }
 
@@ -128,7 +128,7 @@ body {
 .total-balance {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ec7741 0%, #764ba2 100%);
   border-radius: 15px;
   color: white;
   margin-bottom: 25px;
@@ -143,6 +143,7 @@ body {
 
 .total-amount {
   font-size: 2.5rem;
+  color: rgb(48, 45, 42);
   font-weight: 700;
 }
 
@@ -217,7 +218,7 @@ button {
 }
 
 button[type="submit"] {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2ed437 0%, #4ada75 100%);
   color: white;
 }
 
