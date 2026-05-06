@@ -1,12 +1,123 @@
-# React + Vite
+# Currency Exchange Wallet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A professional React-based multi-currency wallet exchange application with a modern UI design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Problem Statement
 
-## Expanding the ESLint configuration
+Managing money across multiple currencies is challenging for individuals and businesses. Users need a simple way to track balances, exchange currencies, and see their total portfolio value in real-time without relying on complex banking systems or spreadsheets.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎯 Project Goals
+
+- Allow users to manage multiple currency balances (USD, EUR, XAF)
+- Enable quick and easy currency exchanges with live rates
+- Display total portfolio value in user's default currency
+- Provide persistent data storage using localStorage
+- Create responsive, professional UI design with smooth animations
+- Deliver excellent user experience with intuitive controls
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend:**
+- React 19.1.0
+- React Icons (Font Awesome)
+- Vite (Build tool)
+- CSS3 
+
+**Storage:**
+- Browser LocalStorage
+
+**Build & Deployment:**
+- Vite
+- Vercel
+
+---
+
+## 🖥 Features
+
+- **Multi-Currency Wallet** - Manage USD, EUR, and XAF balances
+- **Deposit Funds** - Add money to any currency
+- **Currency Exchange** - Convert between currencies with one click
+- **Total Balance View** - See portfolio value in your default currency
+- **Default Currency Selection** - Choose your preferred currency
+- **Auto-Save** - All transactions saved to localStorage automatically
+- **Fully Responsive** - Works seamlessly on mobile and desktop
+
+---
+
+## 🔗 Live Demo
+
+Frontend: https://currency-exchange-app-blond.vercel.app/
+
+---
+
+## ⚙ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ndang11/currency-exchange-app.git
+cd currency-exchange-app
+```
+
+Install dependencies:
+```bash
+npm install
+```
+
+Run the project:
+```bash
+npm run dev
+```
+
+---
+
+## 🧠 Challenges Faced
+
+- Managing state consistency across multiple currency components
+- Handling floating-point precision issues in currency calculations
+- Creating smooth animations while maintaining performance
+- Designing an intuitive UI for currency exchange operations
+- Ensuring data persistence across browser sessions with localStorage
+
+---
+
+## 📚 What I Learned
+
+- Advanced React state management with useState and useEffect hooks
+- Currency calculation precision handling using integer arithmetic
+- Responsive design principles and mobile-first development
+- LocalStorage implementation for persistent client-side data
+- Building reusable UI components with consistent styling
+- Deployment processes with Vercel for React applications
+
+---
+
+## 🚀 Future Improvements
+
+- Integrate real-time exchange rates API for live conversions
+- Add transaction history with timestamps and filtering
+- Implement dark/light mode toggle
+- Add charts and analytics dashboard for portfolio visualization
+- Create PWA support for offline access
+- Add export functionality for transaction reports (CSV/PDF)
+- Implement savings goals and budget tracking features
+- Add currency rate alerts and notifications
+
+---
+
+## 👨🏽‍💻 Author
+
+**NDANG-KAH Ambei**  
+Frontend Developer  
+📩 Email: ndangkahambei@gmail.com  
+🌍 Based in Cameroon | Open to remote opportunities  
+- GitHub: [@ndang11](https://github.com/ndang11)  
+- LinkedIn: [@ndang-ambei](https://www.linkedin.com/in/ndang-ambei-84a97037b/)
+
+---
